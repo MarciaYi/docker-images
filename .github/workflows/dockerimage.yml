@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
-    - name: openjdk8
+    - name: checkout 
+      uses: actions/checkout@v1
+    - name: build-image
       run: docker build . --file java/Dockerfile --tag openjdk8:$(date +%s)

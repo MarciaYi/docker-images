@@ -10,6 +10,4 @@ fi
 
 echo "----start redis server----"
 
-cat redis.conf
-
 redis-server redis.conf

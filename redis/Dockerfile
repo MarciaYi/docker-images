@@ -4,4 +4,6 @@ WORKDIR /opt/redis
 
 COPY  redis.conf start.sh  /opt/redis/
 
-CMD [ "sh","-c","start.sh" ]
+RUN chmod +x start.sh
+
+CMD [ "sh","-c","./start.sh" ]
